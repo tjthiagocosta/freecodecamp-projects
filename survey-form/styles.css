@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(194, 221, 245);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+#container {
+  padding: 0.8rem;
+  background-color: rgba(100, 100, 150, 0.3);
+}
+
+header {
+  padding: 2rem;
+  width: 80%;
+  margin: 1rem auto;
+  align-items: center;
+}
+.form-item {
+  margin: 0 auto;
+  width: 80%;
+  align-items: center;
+}
+.form-item label {
+  display: block;
+}
+
+#submit {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 30%;
+}
+input[type="radio"] {
+  display: inline;
+  margin: 2px;
+  vertical-align: middle;
+}
+#title {
+  margin-bottom: 1.1rem;
+}
+
+.box {
+  width: 100%;
+}
+p {
+  margin-top: 10px;
+}
+.labels {
+  padding-top: 1rem;
+}
+label {
+  padding-left: 2px;
+}
+input[type="checkbox"] {
+  margin: 2px;
+}

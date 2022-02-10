@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Customer Satisfaction Survey</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve our products.
+      </p>
+    </header>
+    <div id="container">
+      <form id="survey-form">
+        <div class="form-item">
+          <label class="labels" id="name-label" for="name">Name</label
+          ><input
+            class="box"
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label class="labels" id="email-label" for="email">E-mail</label
+          ><input
+            class="box"
+            id="email"
+            type="email"
+            placeholder="Enter your e-mail"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label class="labels" id="number-label" for="age">Age <span>(optional)</span></label
+          ><input
+            class="box"
+            id="number"
+            type="number"
+            min="10"
+            max="99"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-item">
+          <label class="labels" for="product-type">Which product category did you buy?</label
+          ><select class="box" name="product-type" id="dropdown">
+            <option disabled selected value>Select product category</option>
+            <option value="clothes">Clothes</option>
+            <option value="shoes">Shoes</option>
+            <option value="accessories">Accessories</option>
+            <option value="makeup">Makeup</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <p>Would you recommend our products to a friend?</p>
+          <label
+            ><input
+              type="radio"
+              name="user-recommend"
+              value="Definitely"
+              checked
+            />Definitely</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="user-recommend"
+              value="Maybe"
+            />Maybe</label
+          >
+          <label
+            ><input type="radio" name="user-recommend" value="Not sure" />Not
+            Sure</label
+          >
+        </div>
+        <div class="form-item">
+          <p>
+            What would you like to see improved?<span
+              >(Check all that apply)</span
+            >
+          </p>
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              value="product-quality"
+            />Product Quality</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              value="product-variety"
+            />Product Variety</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              value="delivery"
+            />Delivery</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              value="customer-service"
+            />Costumer Service</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="prefer"
+              value="website"
+            />Website</label
+          >
+        </div>
+        <div class="form-item">
+          <p>Any comments or suggestions?</p>
+          <textarea class="box"
+            name="comment"
+            id="comments"
+            placeholder="Enter your comment here.."
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <button id="submit" type="submit" class="form-item">Submit</button>
+      </form>
+    </div>
+
+    <!--    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+  </body>
+</html>
